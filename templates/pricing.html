@@ -1,0 +1,17 @@
+<div class="pricing-template cf">
+	<div class="template-header">
+		<h1 class="text-accent">Pricing</h1>
+		<p>Upgrade, Now!.</p>
+	</div>
+	<div class="pricing owl-theme">
+		<div class="owl-carousel container">
+		<div ng-repeat="model in models" class="model" ng-init="$last && callOwl()">
+			<img alt="{{model.name}}" ng-if="model.image" src="{{model.image}}" />
+			<h3>{{model.name}}</h3>
+			<h5>{{model.description}}</h5>
+			<span class="price"><span class="currency">{{model.currency}}</span>{{model.price}}</span>
+			<a href="{{model.link}}" class="checkout">PURCHASE</a>
+		</div>
+	</div>
+	</div>
+</div>

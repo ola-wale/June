@@ -1,0 +1,62 @@
+<div class="portfolio-template cf">
+	<div class="container">
+	<div class="template-header">
+		<h1 class="text-accent">Portfolio</h1>
+		<p>What I've done so far.</p>
+	</div>
+	<ul class="categories">
+		<li data-cat="*" class="active">All
+		<li data-cat="design">Design
+		<li data-cat="clothing" >Clothing
+	</ul>
+	<div>
+		<div class="portfolio container grid">
+			<div data-tags="{{item.tags}}" ng-click="openModal($index)" ng-repeat="item in portfolios" class="item" ng-init="$last && callGrid()">
+				<img src="{{item.image}}" />
+				<div class="overlay">
+					<h3>{{item.name}}</h3>
+				</div>
+				<span class="circle"></span>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h1 ng-bind-html="currentModal.modalTitle | unsafe"></h1>
+					<p>
+						{{currentModal.modalAbout}}
+					</p>
+				</div>
+				<div ng-if="currentModal.details" class="col-sm-6">
+					<h2>Details</h2>
+					<table style="width:100%">
+						<tbody>
+							<tr ng-repeat="(key,detail) in currentModal.details">
+								<td><b class="text-accent">{{key}}:</b></td>
+								<td>{{detail}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div ng-if="currentModal.images" class="carousel clearfix gridModal">
+			<img ng-click="popMeUp(image)" href="{{image}}" src="{{image}}" ng-repeat="image in currentModal.images track by $index" />
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="sub col-lg-8 col-lg-offset-2">
+					<h4>{{currentModal.subText}}</h4>
+					<a ng-if="currentModal.buttonLink" href="{{currentModal.buttonLink}}" class="cool-button">{{currentModal.buttonText}}</a>
+				</div>
+			</div>
+		</div>
+		<span ng-click="closeModal()" class="close">&times;</span>
+	</div>
+	<div class="popmeup">
+		<span ng-click="closePopMeUp()" class="close-popmeup"><span>&times;</span></span>
+	</div>
+	</div>
+</div>

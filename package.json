@@ -1,0 +1,15 @@
+{
+  "name": "june",
+  "version": "1.0.0",
+  "description": "Personal Portfolio AngularJS Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wale Morenigbade <i@owale.co>",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  }
+}

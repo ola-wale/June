@@ -1,0 +1,1012 @@
+/**
+Author : 'Malik Morenigbade'
+AuthorURL : http://ola-wale.github.io
+**/
+body {
+    font-family: Poppins;
+    background-color: white;
+    overflow-x: hidden;
+    position: relative;
+}
+
+ng-view {
+    overflow: hidden;
+}
+
+.angled:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -41px;
+    height: 83px;
+    right: 0;
+    z-index: 3;
+    background-color: white;
+    transform: rotate(3deg);
+}
+
+.angled {
+    position: relative;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background-color: white;
+    z-index: 2;
+}
+
+.route-chooser {
+    -webkit-transform: translateZ(0);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: white;
+    box-shadow: 0 0 28px rgba(0, 0, 0, .15);
+    transition: transform .3s ease-out;
+}
+
+.route-chooser ul {
+    list-style: none;
+    padding: 0;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.route-chooser li {
+    display: inline-block;
+    padding: 16px;
+    margin-bottom: 3px;
+    font-weight: 600;
+    border-top: 3px solid transparent;
+    position: relative;
+}
+
+.route-chooser li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.route-chooser span.current-route {
+    height: 3px;
+    width: 74.27px;
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: red;
+    transform: translateX(198px);
+    transition: transform 0.3s ease-out;
+}
+
+img {
+    max-width: 100%;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+ng-view {
+    display: table;
+    min-height: calc(100vh - 64px);
+    margin-bottom: 64px;
+}
+
+ng-view>div {
+    padding: 30px 0;
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+img.about-image {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.text-accent {
+    color: red;
+}
+
+html body .pull-right {
+    float: right;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+}
+
+@media(max-width:768px) {
+    ng-view {
+        width: 100%;
+    }
+    html body .portfolio-template .item {
+        width: 100%;
+    }
+    html body .contactForm {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    html body #skillsShadowChart,
+    html body #educationShadowChart,
+    html body #experienceShadowChart {
+        left: 0;
+    }
+    .pricing .owl-carousel {
+        width: 100vw;
+        padding: 0;
+    }
+    ng-view.Pricing {
+        padding: 0;
+    }
+    div.pricing {
+        box-shadow: none !important;
+    }
+    div.pricing .model {
+        box-shadow: 0 0 28px rgba(0, 0, 0, .15);
+    }
+}
+
+canvas {
+    max-width: 100%;
+}
+
+a.cool-button {
+    padding: 9px 42px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    margin-top: 15px;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+a.cool-button:hover {
+    box-shadow: none;
+}
+
+.skills-template {
+    text-align: center;
+}
+
+.skills-template h2 {
+    font-weight: 400;
+}
+
+canvas {
+    width: 100%;
+}
+
+.template-header p {
+    color: #b5b5b5;
+}
+
+.template-header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.charts {
+    position: relative;
+}
+
+#skillsShadowChart,
+#educationShadowChart,
+#experienceShadowChart {
+    display: block;
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    z-index: -1;
+}
+
+@media(min-width:768px) {
+    .skills-template .template-header,
+    .education-template .template-header,
+    .experience-template .template-header {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .main-template .contents h1 {
+        font-size: 59px;
+        font-weight: 600;
+    }
+}
+
+#anotateCanvas {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.mobile-modal {
+    box-shadow: 0 0 28px rgba(0, 0, 0, .15);
+    background-color: white;
+    left: 0;
+    text-align: left;
+    padding: 22px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, .15);
+    position: relative;
+}
+
+.mobile-modal h2 {
+    color: blue;
+    margin-bottom: 0;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+#close-modal {
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    right: 9px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.mobile-modal h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: gray;
+    font-weight: 600;
+}
+
+.mobile-modal p {
+    color: rgb(179, 179, 179);
+    margin-bottom: 2px;
+}
+
+.centerfix {
+    position: fixed;
+    top: calc(50% - 35px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 19;
+}
+
+#modal {
+    display: none;
+}
+
+@media(max-width:480px) {
+    #modal {
+        width: 80%;
+    }
+}
+
+.charts {
+    margin-left: -10px;
+}
+
+.slide {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    left: 0;
+}
+
+.slide.ng-enter,
+.slide.ng-leave {
+    transition: all 1s ease;
+}
+
+.slide.ng-enter {
+    transform: translate(100%, 0);
+}
+
+.slide.ng-enter-active {
+    transform: translate(0, 0);
+}
+
+.slide.ng-leave {
+    transform: translate(0, 0);
+}
+
+.slide.ng-leave-active {
+    transform: translate(-100%, 0);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ng-view {
+    position: relative;
+}
+
+.route-chooser ul {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    margin-right: 0 !important;
+    width: 100%;
+    float: left;
+}
+
+.pricing .model img {
+    height: 70px;
+}
+
+div.pricing {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.pricing-template .owl-controls{
+	display: none;
+}
+
+div.pricing .owl-item {
+    padding: 15px;
+}
+
+div.pricing>div {
+    display: inline-block;
+    padding: 0;
+}
+
+div.pricing div.model {
+    padding: 67px 25px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 28px rgba(0, 0, 0, .15);
+    margin-bottom: 20px;
+}
+
+div.pricing div.model span.price {
+    font-weight: 600;
+    position: absolute;
+    font-size: 104px;
+    top: 50%;
+    opacity: 0.1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+div.pricing div.model span.currency {
+    position: absolute;
+    font-size: 24px;
+    left: -10px;
+    top: 12px;
+}
+
+div.pricing div.model h3 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: red;
+}
+
+div.pricing div.model h5 {
+    font-weight: 400;
+    color: gray;
+}
+
+div.pricing div.model {
+    border-radius: 12px;
+}
+
+.owl-item {
+    display: inline-block;
+}
+
+span.sub-colored {
+    max-width: 100vw;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 49vh;
+    background-color: red;
+    z-index: 0;
+    transform: translateY(-100%);
+}
+
+.pricing-template .template-header * {
+    color: white;
+}
+
+.pricing-template {
+    text-align: center;
+}
+
+.owl-carousel .item img {
+    display: block;
+    width: 300px !important;
+    height: auto;
+    float: left;
+}
+
+.owl-carousel .owl-item {
+    float: none !important;
+}
+
+ng-view.Pricing {
+    margin-left: -15px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.pricing-template,
+.p-ricing,
+.owl-stage-outer {
+    max-width: 100%;
+}
+
+.owl-carousel .item img {
+    float: none !important
+}
+
+span.current-route.fix {
+    width: 100% !important;
+    transform: translateX(0) !important;
+    right: 0;
+    margin-top: -3px;
+    left: 0;
+}
+
+.activeroute {
+    position: relative;
+}
+
+.pricing a.checkout {
+    padding: 4px 22px;
+    background-color: red;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    display: block;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 28px rgba(0, 0, 0, .15);
+    text-decoration: none !important;
+    transition: all 0.2s ease-out;
+}
+
+.pricing a.checkout:hover {
+    box-shadow: 0 0 28px rgb(255, 17, 0);
+}
+
+canvas {
+    image-rendering: optimizeSpeed;
+    /* Older versions of FF          */
+    image-rendering: -moz-crisp-edges;
+    /* FF 6.0+                       */
+    image-rendering: -webkit-optimize-contrast;
+    /* Safari                        */
+    image-rendering: -o-crisp-edges;
+    /* OS X & Windows Opera (12.02+) */
+    image-rendering: pixelated;
+    /* Awesome future-browsers       */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE                            */
+}
+
+span.curve {
+    position: absolute;
+    width: 12px;
+    height: 77px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.28);
+    left: 34px;
+    bottom: -20px;
+}
+
+span.curve:after {
+    content: '';
+    position: absolute;
+    width: 341%;
+    height: 76%;
+    top: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+}
+
+span.curve1 {
+    left: initial;
+    right: 278px;
+    top: 130px;
+    height: initial;
+}
+
+span.curve1:after {
+    height: initial;
+    top: 130px;
+}
+
+.portfolio-template .item {
+    float: left;
+    display: inline-block;
+    width: 33.333%;
+    position: relative;
+    margin-bottom: -9px;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+}
+
+.portfolio-template .item img {
+    width: 100%;
+}
+
+.portfolio-template .item h3 {
+    display: none;
+}
+
+.gridModal {
+    width: 100%;
+}
+
+.portfolio-template .overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.portfolio-template .item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /**  background-color: rgba(255, 255, 255, 0.69);**/
+    left: 0;
+    right: 0;
+}
+
+.portfolio-template span.circle {
+    height: 0px;
+    width: 0px;
+    display: block;
+    position: absolute;
+    background-color: white;
+    border-radius: 100%;
+    transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.portfolio-template .item:hover span.circle {
+    height: 1500px;
+    width: 1500px;
+    transform: translateX(-45%) translateY(-32%);
+}
+
+.portfolio-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 5;
+    overflow: auto;
+    display: none;
+}
+
+.portfolio-modal .container {
+    margin-top: 61px;
+    margin-bottom: 61px;
+}
+
+.portfolio-modal h1 {
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    font-size: 40px;
+}
+
+.portfolio-modal h2 {
+    margin: 0;
+}
+
+.nav-prev:after,
+.nav-next:after {
+    font-family: fontawesome;
+    font-size: 24px;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    content: '';
+    padding: 7px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 1px solid white;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.owl-dot span {
+    background-color: rgba(255, 255, 255, 0.54);
+    height: 13px;
+    width: 13px;
+    display: block;
+    border-radius: 100%;
+}
+
+div.owl-dot {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.owl-dots div.owl-dot:last-child {
+    margin-right: 0;
+}
+
+.owl-dot.active span {
+    background-color: white;
+    box-shadow: 0px 0px 3px 1px rgba(66, 66, 66, 0.41);
+}
+
+.owl-dots {
+    text-align: center;
+    position: absolute;
+    bottom: 16px;
+    right: 14px;
+    background-color: rgba(241, 241, 241, 0.26);
+    padding: 0 10px;
+    border-radius: 11px;
+}
+
+div.content-gallery {
+    margin-bottom: 30px;
+}
+
+.nav-prev,
+.nav-next {
+    display: none
+}
+
+.nav-prev:hover:after,
+.nav-next:hover:after {
+    background-color: white;
+    color: black;
+}
+
+.nav-prev:after {
+    content: "\f104";
+    left: 20px;
+}
+
+.nav-next:after {
+    content: "\f105";
+    right: 20px;
+}
+
+.portfolio-template .sub h4 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.portfolio-template .sub {
+    text-align: center;
+    margin-bottom: 79px;
+}
+
+.portfolio-template .sub .cool-button {
+    margin-top: 0;
+}
+
+.portfolio-template span.close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 38px;
+}
+
+.portfolio-template tr td {
+    text-transform: capitalize;
+}
+
+.portfolio-template>.container {
+    padding: 0;
+}
+
+.portfolio-template .carousel img {
+    float: left;
+    width: 33.3333%;
+}
+
+.portfolio-template .categories {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.portfolio-template .categories li {
+    display: inline-block;
+    margin: 5px 9px;
+    padding-bottom: 3px;
+    font-weight: 500;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.portfolio-template .categories li.active {
+    opacity: 1;
+    color: red;
+}
+
+.portfolio.container.grid{
+	padding: 0;
+}
+
+.portfolio-template .item:nth-child(2n) {
+    height: 500px;
+}
+
+.portfolio-template .item:nth-child(2n) img,
+.portfolio-template .item:nth-child(5n) img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-template .item:nth-child(5n) {
+    height: 400px;
+}
+
+
+/** POPMEUP **/
+
+.popmeup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 5;
+    display: none;
+}
+
+body.popmeup-open .route-chooser {
+    transform: translateY(100%);
+}
+
+body.popmeup-open {
+    overflow: hidden;
+}
+
+span.pop-overlay {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+span.close-popmeup {
+    position: absolute;
+    top: 0;
+    right: -52px;
+    background-color: rgba(0, 0, 0, 0.13);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+span.close-popmeup span {
+    vertical-align: middle;
+    font-size: 40px;
+    position: relative;
+    top: -16px;
+}
+
+.popmeup img {
+    border-radius: 4px;
+    max-height: calc(100vh - 30px);
+}
+
+[ng-click] {
+    cursor: pointer;
+}
+
+.contactForm {
+    width: 400px;
+    z-index: 999999999999999999;
+    background-color: white;
+    position: fixed;
+    text-align: center;
+    right: 52px;
+    top: 50%;
+    box-shadow: 0 0 28px rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    transform: translateY(-50%);
+}
+
+#map {
+    height: 100vh;
+    width: 100vw;
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.contactForm img {
+    width: 98px;
+}
+
+.contactForm .head {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+    padding: 19px;
+    opacity: 0.7;
+}
+
+.contactForm .head h3,
+.contactForm .head p {
+    margin: 0;
+}
+
+.contactForm span.circle {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0.2;
+}
+
+.contactForm span.circle:after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    background-color: white;
+    top: 4px;
+    bottom: 4px;
+    border-radius: 100%;
+}
+
+.contactForm span.circle1 {
+    left: 20px;
+    top: 16px;
+}
+
+.contactForm span.circle2 {
+    left: 92px;
+    top: 59px;
+}
+
+.contactForm span.circle3 {
+    right: 28px;
+    top: 43px;
+}
+
+.contactForm input[type='text'],
+.contactForm input[type='email'],
+textarea {
+    border: 1px solid gainsboro;
+    padding: 11px;
+    font-family: Poppins;
+    width: calc(100% - 90px);
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.contactForm a.cool-button {
+    margin-top: 0;
+    margin-bottom: 29px;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+.route-chooser .main img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-top: -12px;
+    position: relative;
+    top: 8px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-out;
+}
+
+.route-chooser li.main.activeroute span.current-route.fix {
+    opacity: 0;
+}
+
+.route-chooser li.main.activeroute img {
+    border-color: red;
+}
+
+.route-chooser li.main a {
+    font-size: 0;
+}
+
+.main-template {
+    width: 100vw;
+    display: table;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background: url(../images/mainbackground.jpeg);
+    background-size: cover;
+}
+
+.main-template .overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.main-template .contents {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 4;
+    color: white;
+}
+
+.main-template .contents a.proceed {
+    background-color: white;
+    color: black;
+    margin-right: 6px;
+}
+
+.main-template .contents a.resume span {
+    transform: rotate(90deg);
+    display: inline-block;
+}
+
+ng-view {
+    width: 100% !important;
+}
