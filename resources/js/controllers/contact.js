@@ -1,7 +1,7 @@
 app.controller('contactController',function($scope){
 
 function initMap() {
-        var uluru = {lat: 51.775739, lng: 19.490522};
+        var uluru = {lat: 31.549237, lng: 35.481061};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 7,
           center: uluru,
